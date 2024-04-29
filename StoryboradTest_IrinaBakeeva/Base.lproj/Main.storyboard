@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StoryboradTest_IrinaBakeeva" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rp0-yn-82o">
@@ -37,7 +37,7 @@
                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="20"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="TCi-Ou-Pnu" kind="show" id="C9v-ln-Ur8"/>
+                                            <segue destination="TCi-Ou-Pnu" kind="presentation" modalPresentationStyle="fullScreen" id="11K-bG-T7Q"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -90,7 +90,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiE-8K-gfE">
                                 <rect key="frame" x="177" y="499" width="142" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="142" id="0XS-tY-7bI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="142" id="0XS-tY-7bI"/>
                                     <constraint firstAttribute="height" constant="44" id="c4h-12-l1L"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -107,11 +107,13 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="viewColor"/>
+                        <color key="tintColor" name="viewColor"/>
                         <constraints>
                             <constraint firstItem="rp0-yn-82o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="238" id="CeM-fd-IRF"/>
                             <constraint firstItem="rp0-yn-82o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="GBO-On-yja"/>
-                            <constraint firstItem="HiE-8K-gfE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="177" id="LYU-yt-JPd"/>
+                            <constraint firstItem="HiE-8K-gfE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LYU-yt-JPd"/>
                             <constraint firstItem="HiE-8K-gfE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="499" id="YQp-ND-OEZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HiE-8K-gfE" secondAttribute="trailing" constant="74" id="YTO-CN-sGB"/>
                             <constraint firstItem="Lg4-Wp-tNN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="319" id="dDm-cl-cTx"/>
                             <constraint firstItem="KIz-T4-W5X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="lRg-SV-D4E"/>
                             <constraint firstItem="KIz-T4-W5X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="406" id="o4L-Oc-qoN"/>
@@ -122,14 +124,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="121" y="4"/>
+            <point key="canvasLocation" x="-100" y="4"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hru-wc-eTb">
             <objects>
                 <viewController id="TCi-Ou-Pnu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d4u-Ti-eWd">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCi-9B-6i3">
@@ -152,7 +154,7 @@
                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="20"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="GTC-lt-i4F"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="U7H-9P-0ha"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -262,7 +264,7 @@
                                 <rect key="frame" x="177" y="596" width="142" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="LBR-pT-C5X"/>
-                                    <constraint firstAttribute="width" constant="142" id="iDu-Jl-F8C"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="142" id="iDu-Jl-F8C"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login">
@@ -279,6 +281,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" name="viewColor"/>
                         <constraints>
+                            <constraint firstItem="8gX-ed-mb1" firstAttribute="trailing" secondItem="7XC-8Y-q0w" secondAttribute="trailing" constant="74" id="0kY-B8-Cia"/>
                             <constraint firstItem="BdO-61-ktO" firstAttribute="top" secondItem="8gX-ed-mb1" secondAttribute="top" constant="430" id="0mR-wK-lyT"/>
                             <constraint firstItem="s62-xa-5FL" firstAttribute="top" secondItem="8gX-ed-mb1" secondAttribute="top" constant="517" id="1zU-Bk-FUD"/>
                             <constraint firstItem="uNo-nM-ce8" firstAttribute="leading" secondItem="8gX-ed-mb1" secondAttribute="leading" constant="45" id="2cE-H8-iTk"/>
@@ -298,17 +301,12 @@
                             <constraint firstItem="oCi-9B-6i3" firstAttribute="top" secondItem="8gX-ed-mb1" secondAttribute="top" constant="270" id="nQu-aH-5tn"/>
                             <constraint firstItem="s62-xa-5FL" firstAttribute="leading" secondItem="8gX-ed-mb1" secondAttribute="leading" constant="45" id="u4b-1S-Zcs"/>
                         </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <integer key="value" value="100"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="2au-av-PAl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmv-Bc-vsc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="818" y="4"/>
+            <point key="canvasLocation" x="1033" y="4"/>
         </scene>
     </scenes>
     <resources>

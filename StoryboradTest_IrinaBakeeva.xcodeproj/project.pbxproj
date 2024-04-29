@@ -13,9 +13,6 @@
 		3F850F8B2BDA3FB8001BAA43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F850F8A2BDA3FB8001BAA43 /* ViewController.swift */; };
 		3F850F8E2BDA3FB8001BAA43 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3F850F8D2BDA3FB8001BAA43 /* Base */; };
 		3F850F932BDA3FBA001BAA43 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3F850F922BDA3FBA001BAA43 /* Base */; };
-		3F850F9E2BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F850F9D2BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaTests.swift */; };
-		3F850FA82BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F850FA72BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaUITests.swift */; };
-		3F850FAA2BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F850FA92BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +42,7 @@
 		3F850F922BDA3FBA001BAA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F850F942BDA3FBA001BAA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F850F992BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboradTest_IrinaBakeevaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F850F9D2BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboradTest_IrinaBakeevaTests.swift; sourceTree = "<group>"; };
 		3F850FA32BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboradTest_IrinaBakeevaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F850FA72BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboradTest_IrinaBakeevaUITests.swift; sourceTree = "<group>"; };
-		3F850FA92BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboradTest_IrinaBakeevaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				3F850F852BDA3FB8001BAA43 /* StoryboradTest_IrinaBakeeva */,
-				3F850F9C2BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaTests */,
-				3F850FA62BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaUITests */,
 				3F850F842BDA3FB8001BAA43 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,23 +100,6 @@
 				3F850F942BDA3FBA001BAA43 /* Info.plist */,
 			);
 			path = StoryboradTest_IrinaBakeeva;
-			sourceTree = "<group>";
-		};
-		3F850F9C2BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaTests */ = {
-			isa = PBXGroup;
-			children = (
-				3F850F9D2BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaTests.swift */,
-			);
-			path = StoryboradTest_IrinaBakeevaTests;
-			sourceTree = "<group>";
-		};
-		3F850FA62BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3F850FA72BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaUITests.swift */,
-				3F850FA92BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaUITestsLaunchTests.swift */,
-			);
-			path = StoryboradTest_IrinaBakeevaUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F850F9E2BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F850FA82BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaUITests.swift in Sources */,
-				3F850FAA2BDA3FBA001BAA43 /* StoryboradTest_IrinaBakeevaUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
