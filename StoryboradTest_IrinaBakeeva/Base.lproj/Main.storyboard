@@ -278,7 +278,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8gX-ed-mb1"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="viewColor"/>
                         <color key="tintColor" name="viewColor"/>
                         <constraints>
                             <constraint firstItem="8gX-ed-mb1" firstAttribute="trailing" secondItem="7XC-8Y-q0w" secondAttribute="trailing" constant="74" id="0kY-B8-Cia"/>
