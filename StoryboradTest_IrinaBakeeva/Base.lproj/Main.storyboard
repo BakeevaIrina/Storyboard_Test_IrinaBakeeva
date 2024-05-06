@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rp0-yn-82o">
-                                <rect key="frame" x="45" y="238" width="216" height="46"/>
+                                <rect key="frame" x="45" y="297" width="216" height="46"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN /" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpF-LM-iKN">
                                         <rect key="frame" x="0.0" y="0.0" width="121.33333333333333" height="46"/>
@@ -37,7 +37,7 @@
                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="20"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="TCi-Ou-Pnu" kind="presentation" modalPresentationStyle="fullScreen" id="11K-bG-T7Q"/>
+                                            <action selector="showViewControllerSecond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vaX-su-iah"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -46,7 +46,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Lg4-Wp-tNN">
-                                <rect key="frame" x="45" y="319" width="278" height="29"/>
+                                <rect key="frame" x="45" y="378" width="278" height="29"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ka-Bl-zh8">
                                         <rect key="frame" x="0.0" y="0.0" width="278" height="22"/>
@@ -67,7 +67,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KIz-T4-W5X">
-                                <rect key="frame" x="45" y="406" width="278" height="29"/>
+                                <rect key="frame" x="45" y="465" width="278" height="29"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1X-kh-Y92">
                                         <rect key="frame" x="0.0" y="0.0" width="278" height="22"/>
@@ -88,7 +88,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiE-8K-gfE">
-                                <rect key="frame" x="177" y="499" width="142" height="44"/>
+                                <rect key="frame" x="177" y="558" width="142" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="142" id="0XS-tY-7bI"/>
                                     <constraint firstAttribute="height" constant="44" id="c4h-12-l1L"/>
@@ -126,16 +126,16 @@
             </objects>
             <point key="canvasLocation" x="-100" y="4"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Second-->
         <scene sceneID="hru-wc-eTb">
             <objects>
-                <viewController id="TCi-Ou-Pnu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerSecond" id="TCi-Ou-Pnu" customClass="ViewControllerSecond" customModule="StoryboradTest_IrinaBakeeva" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d4u-Ti-eWd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCi-9B-6i3">
-                                <rect key="frame" x="44.999999999999986" y="270" width="213.66666666666663" height="46"/>
+                                <rect key="frame" x="44.999999999999986" y="329" width="213.66666666666663" height="46"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sing Up /" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMa-5A-TCy">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="46"/>
@@ -154,7 +154,7 @@
                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="20"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="U7H-9P-0ha"/>
+                                            <action selector="shoeViewControllerFirst:" destination="TCi-Ou-Pnu" eventType="touchUpInside" id="acT-dB-HWp"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -163,7 +163,7 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ellipseFon" translatesAutoresizingMaskIntoConstraints="NO" id="lB9-q0-95c">
-                                <rect key="frame" x="132" y="134" width="110" height="110"/>
+                                <rect key="frame" x="132" y="193" width="110" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="knB-Xt-hmD"/>
                                     <constraint firstAttribute="height" constant="110" id="tI6-ef-PHL"/>
@@ -175,7 +175,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="F03-X1-lPv">
-                                <rect key="frame" x="132" y="134" width="110" height="110"/>
+                                <rect key="frame" x="132" y="193" width="110" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="fvB-Fn-31A"/>
                                     <constraint firstAttribute="height" constant="110" id="s41-nS-9sf"/>
@@ -187,7 +187,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQ1-jl-pYu">
-                                <rect key="frame" x="45" y="343" width="274" height="203"/>
+                                <rect key="frame" x="45" y="402" width="274" height="203"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="V6U-G2-nrr">
                                         <rect key="frame" x="0.0" y="0.0" width="274" height="29"/>
@@ -261,7 +261,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XC-8Y-q0w">
-                                <rect key="frame" x="177" y="596" width="142" height="44"/>
+                                <rect key="frame" x="177" y="655" width="142" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="LBR-pT-C5X"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="142" id="iDu-Jl-F8C"/>
